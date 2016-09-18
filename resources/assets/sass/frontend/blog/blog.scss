@@ -227,9 +227,12 @@ hr.small {
             font-size: 35px;
         }
         .subheading,
-        .meta {
+        .meta-index {
             line-height: 1.1;
             display: block;
+            margin-bottom: 45px;
+            position: relative;
+            margin-bottom: 0;
         }
         .subheading {
             @include sans-serif();

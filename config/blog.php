@@ -12,10 +12,10 @@ return [
   | graph tags on sites such as Facebook and Twitter.
   |
   */
-  'title'           => 'Canvas',
-  'subtitle'        => 'Minimal Blogging App',
+  'title'           => 'Laravel学院',
+  'subtitle'        => 'Laravel学院',
   'description'     => 'Blog',
-  'author'          => 'Todd Austin',
+  'author'          => '凯文',
   'seo'             => 'minimal,blogging,app',
 
   /*

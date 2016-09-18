@@ -22,7 +22,6 @@ class BlogController extends Controller
         $tag = $request->get('tag');
         $data = $this->dispatch(new BlogIndexData($tag));
         $layout = $tag ? Tag::layout($tag)->first() : 'frontend.blog.index';
-
         return view($layout, $data)->with(compact('user'));
     }
 
@@ -40,7 +39,6 @@ class BlogController extends Controller
         if ($tag) {
             $tag = Tag::whereTag($tag)->firstOrFail();
         }
-
         return view($post->layout, compact('post', 'tag', 'slug', 'title', 'user'));
     }
 }

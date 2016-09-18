@@ -8,6 +8,7 @@
         <meta name="description" content="{{ $meta_description }}">
 
         @include('frontend.partials.css')
+        @yield('css')
     </head>
     <body>
         @include('frontend.blog.partials.header')
@@ -17,5 +18,9 @@
         @yield('unique-js')
 
         @include('frontend.blog.partials.footer')
+
     </body>
+<scprit>
+    @yield("script")
+</scprit>
 </html>
