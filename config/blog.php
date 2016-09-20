@@ -12,8 +12,8 @@ return [
   | graph tags on sites such as Facebook and Twitter.
   |
   */
-  'title'           => 'Laravel学院',
-  'subtitle'        => 'Laravel学院',
+  'title'           => 'I Code For',
+  'subtitle'        => '.........I Code For..........',
   'description'     => 'Blog',
   'author'          => '凯文',
   'seo'             => 'minimal,blogging,app',

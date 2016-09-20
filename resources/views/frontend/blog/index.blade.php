@@ -5,82 +5,45 @@
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+
     <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github-gist.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github-gist.min.css">
-
+    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
 @endsection
-<header class="header  push-down-45">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a id="logo" title="Start..." class="navbar-brand" href="/de/">
-                    <!-- <div class="mainpage-whoop-logo"></div> -->
-                    <img src="https://vuejsfeed.com/img/vuejsfeed-medium.png" srcset="/images/logos/whoop-logo-72.png 1x, /images/logos/whoop-logo-144.png 2x" alt="Whoop! Logo">
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="">
-                        <a href="/de/features/">Features</a>
-                    </li>
-
-                    <li class="">
-                        <a href="/de/preise/">Preise</a>
-                    </li>
-                    <li class="">
-                        <a href="/de/kunden/">Kunden</a>
-                    </li>
-                    <li class="">
-                        <a href="http://blog.whoopapp.com/">Blog</a>
-                    </li>
-                    <li class="">
-                        <a href="/de/events/">Events</a>
-                    </li>
-                    <li class="">
-                        <a href="/de/faq/">FAQ</a>
-                    </li>
-                </ul>
-
-
-                <ul class="nav navbar-nav navbar-right">
-
-
-                    <li class="phone-number"><a href="tel:+4373299700252" data-event-category="Telephone" data-event-action="tel" data-event-label="Telephone link / Header">+43 732 997002-52</a></li>
-
-
-                    <li class="nav-signup-cta ">
-                        <a href="/de/signup/" data-event-category="Referral to Signup" data-event-action="click" data-event-label="Signup Menu button / Header">Signup</a>
-                    </li>
-                    <li class="">
-                        <a href="http://start.whoopapp.com/" target="_blank">Login</a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
-
-    </nav>
-</header>
 @section('content')
     <div class="container">
 
         <div class="row">
 
             <div class="col-md-8">
+
+                <div class="boxed  push-down-45">
+                    <div class="meta"></div>
+                    <div class="row">
+                        <div class="col-xs-10  col-xs-offset-1">
+                            <!-- Start of the content -->
+                            <div class="post-content--front-page subscribe">
+                                <h2 class="front-page-title">订阅最新博文</h2>
+                                <hr>
+                                <h3>编程笔记, 科技前沿, 奇思怪想!</h3>
+                                <div id="revue-embed">
+                                    <form action="https://www.getrevue.co/profile/vuejs-news/add_subscriber" method="post" id="revue-form" name="revue-form" target="_blank">
+                                        <div class="revue-form-group">
+                                            <input class="revue-form-field form-control" placeholder="填写您的邮箱..." type="email" name="member[email]" id="member_email">
+                                        </div>
+                                        <div class="revue-form-actions">
+                                            <input type="submit" value="提交" name="member[subscribe]" id="member_submit" class="btn btn-info btn-block">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 @foreach ($posts as $post)
 
                     <div class="boxed  push-down-45">
@@ -136,7 +99,7 @@
 
                         <!-- Widget featured post -->
                         <div class="widget-featured-post  push-down-30">
-                            <h6>Featured post</h6>
+                            <h6>推荐</h6>
                             <a href="https://vuejsfeed.com/blog/announcing-vuedo">
                                 <img src="https://d2jq2hx2dbkw6t.cloudfront.net/17/vuedo post.png"
                                      alt="Featured post"
@@ -156,7 +119,7 @@
 
 
                         <div class="widget-categories push-down-30">
-                            <h6>Categories</h6>
+                            <h6>分类</h6>
                             <ul>
                                 <li>
                                     <a href="https://vuejsfeed.com/category/news">News &nbsp; <span
